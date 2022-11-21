@@ -97,7 +97,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 # To solve this error message:
 # There were fatal errors during processing of zoneinfo directory
 # make: *** [test] Error 1
-RUN ln -fs /usr/share/zoneinfo/Europe/Paris /etc/localtime && apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y tzdata && rm -rf /var/lib/apt/lists/*
+RUN ln -fs /usr/share/zoneinfo/Asia/Tokyo /etc/localtime && apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y tzdata && rm -rf /var/lib/apt/lists/*
 # Changed from original - end
 
 
